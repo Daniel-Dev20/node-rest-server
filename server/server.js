@@ -20,10 +20,7 @@ app.put('/usuario/:id', (req, res) => {
 
 app.post('/usuario', (req, res) => {
     let body = req.body;
-    res.json({
-        Usuario: body
-
-    })
+    res.send('get usuario')
 });
 
 app.listen(process.env.PORT, () => {
